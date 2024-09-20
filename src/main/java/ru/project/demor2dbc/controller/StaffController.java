@@ -17,9 +17,9 @@ public class StaffController {
     private final StaffService staffService;
 
     @GetMapping
-    public Flux<StaffDto> findAllBy(@RequestParam(defaultValue = "testLastName0") String lastName,
-                                @RequestParam(defaultValue = "testFirstName 0") String firstName,
-                                @RequestParam(defaultValue = "0") String phone) {
+    public Flux<StaffDto> findAllBy(@RequestParam(defaultValue = "lastName") String lastName,
+                                @RequestParam(defaultValue = "firstName") String firstName,
+                                @RequestParam(defaultValue = "phone") String phone) {
         return staffService.findAllBy(lastName, firstName, phone);
     }
 }

@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import ru.project.demor2dbc.dto.StaffDto;
-import ru.project.demor2dbc.model.Staff;
 import ru.project.demor2dbc.repository.StaffRepository;
 
 @Service
